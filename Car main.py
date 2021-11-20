@@ -3,15 +3,15 @@ class Car:
                 self.model = model
                 self.size = size
                 self.color = color
-                self.doors = doors
+                #self.doors = doors
                 self.mileage = mileage
         def characteristics(self):
-                print("\nХарактеристики вашего автомобиля:\nМарка: ", self.model, "\nРазмер: ", self.size, "\nЦвет: ", self.color, "\nКол-во дверей: ", self.doors, "\nПробег: ", self. mileage, "\nГод создания:", self.made_year, "\n")
+                print("\nХарактеристики вашего автомобиля:\nМарка: ", self.model, "\nРазмер: ", self.size, "\nЦвет: ", self.color, /*"\nКол-во дверей: ", self.doors,*/ "\nПробег: ", self. mileage, "\nГод создания:", self.made_year, "\n")
 
 models = [" ","Nissan", "Toyota", "BMW", "Lamborgini", "Ford", "Ferrari"]
 sizes = [" ", "Big", "Medium", "Small", "Family size"]
 colors = [" ", "Red", "Yellow", "Blue", ]
-doorss = [" ", "2", "4", "6"]
+#doorss = [" ", "2", "4", "6"]
 mileages = [" ", "НОВАЯ", "До 1000 км", ">1000 км"]
 made_years = [" ", "<1990г", "1990 - 2000гг", ">2000г"]
 
@@ -30,11 +30,11 @@ print("Ваш выбор: ", car_user_choice.model)
 chce("размер вашей машины", "1. Big\n2. Medium\n3. Small\n4. Family size\n", sizes)
 car_user_choice.size = sizes[choice]
 print("Ваш выбор: ", car_user_choice.size)
-
+"""
 chce("кол-во дверей:", "\n1. 2\n2. 4\n3. 6\n", doorss)
 car_user_choice.doors = doorss[choice]
 print("Ваш выбор: ", car_user_choice.doors)
-
+"""
 chce("цвет:", "\n1. Red\n2. Yellow\n3. Blue\n", colors)
 car_user_choice.color = colors[choice]
 print("Ваш выбор: ", car_user_choice.color)
