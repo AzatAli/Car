@@ -49,3 +49,5 @@ print("Ваш выбор: ", car_user_choice.made_year)
 
 car_user_choice.characteristics(car_user_choice)
 input()
+
+#плов плов плов
